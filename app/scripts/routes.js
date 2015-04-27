@@ -74,6 +74,30 @@ angular.module('scoreboardApp')
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
+      .when('/games', {
+        templateUrl: 'views/games.html',
+        controller: 'GamesCtrl'
+      })
+      .when('/games/:gameid', {
+        templateUrl: 'views/gamedetail.html',
+        controller: 'GamedetailCtrl'
+      })
+      .when('/game/new', {
+        templateUrl: 'views/gamecreate.html',
+        controller: 'GamecreateCtrl'
+      })
+      .when('/players', {
+        templateUrl: 'views/players.html',
+        controller: 'PlayersCtrl'
+      })
+      .when('/players/:playerid', {
+        templateUrl: 'views/playersdetail.html',
+        controller: 'PlayersdetailCtrl'
+      })
+      .when('/players/new', {
+        templateUrl: 'views/playercreate.html',
+        controller: 'PlayercreateCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

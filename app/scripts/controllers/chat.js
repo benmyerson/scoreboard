@@ -21,6 +21,8 @@ angular.module('scoreboardApp')
         $scope.messages.$add({text: newMessage})
           // display any errors
           .catch(alert);
+
+        newMessage = null;
       }
     };
 

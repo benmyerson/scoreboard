@@ -2,13 +2,12 @@
 
 /**
  * @ngdoc function
- * @name scoreboardApp.controller:MainCtrl
+ * @name scoreboardApp.controller:GamecreateCtrl
  * @description
- * # MainCtrl
+ * # GamecreateCtrl
  * Controller of the scoreboardApp
  */
 angular.module('scoreboardApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('GamecreateCtrl', function ($scope) {
     console.log($scope);
-
   });

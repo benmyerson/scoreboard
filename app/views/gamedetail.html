@@ -1,0 +1,17 @@
+<div class="table">
+
+  <div class="table__side table__side--north"
+        ng-class="{'table__side--game-point': game.player1.gamePoint,
+                   'table__side--winner': game.player1.winner}"
+        ng-click="adjustScore(true,true)">
+
+    <input ng-model="game.player1.score" />
+  </div>
+  <div class="table__side table__side--south"
+        ng-class="{'table__side--game-point': game.player2.gamePoint,
+                   'table__side--winner': game.player2.winner}"
+        ng-click="adjustScore(false,true)">
+
+    <input ng-model="game.player2.score" />
+  </div>
+</div>

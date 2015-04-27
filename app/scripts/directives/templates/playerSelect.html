@@ -1,0 +1,7 @@
+<select ng-model="model" ng-change="changeFunction()">
+  <option value="">-- Select {{ playerLabel }} --</option>
+  <option ng-disabled="player.$id == otherPlayer" ng-repeat="player in players" value="{{ player.$id }}">
+    {{ player.name }}
+  </option>
+  <option value="new">Create New Player...</option>
+</select>

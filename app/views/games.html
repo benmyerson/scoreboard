@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li ng-repeat="g in games | orderBy: startTime | reverse">
+      <a ng-href="#/games/{{g.$id}}">
+        {{g.player1.score}}-{{g.player2.score}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <player-select player="player1" other-player="player2" player-label="Player One"></player-select>
+  <player-select player="player2" other-player="player1" player-label="Player Two"></player-select>
+  <button ng-disabled="player1==='' || player2===''" ng-click="createGame()">Create New Game</button>
+</div>

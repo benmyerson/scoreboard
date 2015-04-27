@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name scoreboardApp.controller:MainCtrl
+ * @name scoreboardApp.controller:PlayersdetailCtrl
  * @description
- * # MainCtrl
+ * # PlayersdetailCtrl
  * Controller of the scoreboardApp
  */
 angular.module('scoreboardApp')
-  .controller('MainCtrl', function ($scope) {
-    console.log($scope);
+  .controller('PlayersdetailCtrl', function () {
+
 
   });
